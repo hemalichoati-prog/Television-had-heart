@@ -11,13 +11,14 @@ body{margin:0;background:#fff;color:var(--dark);-webkit-font-smoothing:antialias
 .hero{padding:56px 0;background:#f6f6f8}
 .hero h1{margin:0 0 8px}
 
-/* Video CSS */
-.video-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-top:16px}
+/* Video CSS — reduced size */
+.video-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-top:16px;max-width:640px;margin-left:auto;margin-right:auto}
 .video-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-.video-placeholder{position:relative;cursor:pointer;max-width:900px;margin:16px auto;border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(2,6,23,0.08)}
+.video-placeholder{position:relative;cursor:pointer;max-width:640px;margin:16px auto;border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(2,6,23,0.08)}
 .video-placeholder img.video-thumb{display:block;width:100%;height:auto;object-fit:cover}
-.play-overlay{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,0.6);color:#fff;padding:18px 22px;border-radius:999px;font-size:28px}
+.play-overlay{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,0.6);color:#fff;padding:12px 14px;border-radius:999px;font-size:20px}
 #video-target{margin-top:16px}
 @media (max-width:700px){
-  .play-overlay{font-size:22px;padding:14px 16px}
+  .play-overlay{font-size:18px;padding:10px 12px}
+  .video-container, .video-placeholder{max-width:100%}
 }
