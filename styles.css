@@ -1,1 +1,23 @@
+:root{
+  --accent:#c77dff;
+  --dark:#111219;
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial;
+  color:var(--dark);
+}
+body{margin:0;background:#fff;color:var(--dark);-webkit-font-smoothing:antialiased}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{font-family:"Montserrat",sans-serif;font-weight:700;text-decoration:none;color:var(--dark);font-size:1.1rem}
+.hero{padding:56px 0;background:#f6f6f8}
+.hero h1{margin:0 0 8px}
 
+/* Video CSS */
+.video-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-top:16px}
+.video-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-placeholder{position:relative;cursor:pointer;max-width:900px;margin:16px auto;border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(2,6,23,0.08)}
+.video-placeholder img.video-thumb{display:block;width:100%;height:auto;object-fit:cover}
+.play-overlay{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,0.6);color:#fff;padding:18px 22px;border-radius:999px;font-size:28px}
+#video-target{margin-top:16px}
+@media (max-width:700px){
+  .play-overlay{font-size:22px;padding:14px 16px}
+}
