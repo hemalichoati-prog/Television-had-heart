@@ -1,1 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Deluxe Salon — Videos</title>
+  <meta name="description" content="Salon videos" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Deluxe Salon</a>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Welcome to Deluxe Salon</h1>
+          <p>Our styling tutorials and highlights.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos" class="section videos">
+      <div class="container">
+        <h2>Our Videos</h2>
+        <p>Watch our styling tutorials and salon highlights.</p>
+
+        <!-- Click-to-load wrapper -->
+        <!-- Playlist ID: PLByuz80VQWiA -->
+        <!-- Thumbnail video ID: SK59IgwN2B4 -->
+        <div class="video-placeholder" data-playlist="PLByuz80VQWiA" role="button" aria-label="Load playlist">
+          <img class="video-thumb" src="https://img.youtube.com/vi/SK59IgwN2B4/maxresdefault.jpg" alt="Playlist thumbnail">
+          <div class="play-overlay" aria-hidden="true">▶</div>
+        </div>
+
+        <!-- The iframe will be injected here when clicked -->
+        <div id="video-target"></div>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Deluxe Salon</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
