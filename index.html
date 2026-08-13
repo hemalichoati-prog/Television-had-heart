@@ -19,27 +19,31 @@
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-content">
-          <h1>When Television Had Heart</h1>
-          <p>Our styling tutorials and highlights.</p>
+          <h1>Where openings became memories.</h1>
+          <p>Pure nostalgia, audio-only. Start the time machine.</p>
         </div>
       </div>
     </section>
 
     <section id="videos" class="section videos">
       <div class="container">
-        <h2>Our Videos</h2>
-        <p>Watch our styling tutorials and salon highlights.</p>
+        <h2>Our Title Tracks</h2>
+        <p>Listen to the opening themes that shaped our favorite serials — audio-only, no video.</p>
 
-        <!-- Click-to-load wrapper -->
-        <!-- Playlist ID: PLByuz80VQWiA -->
-        <!-- Thumbnail video ID: SK59IgwN2B4 -->
-        <div class="video-placeholder" data-playlist="PLByuz80VQWiA" role="button" aria-label="Load playlist">
-          <img class="video-thumb" src="https://img.youtube.com/vi/SK59IgwN2B4/maxresdefault.jpg" alt="Playlist thumbnail">
-          <div class="play-overlay" aria-hidden="true">▶</div>
+        <!-- Audio player (HTML5) -->
+        <div class="audio-player" id="audio-player">
+          <div class="player-controls">
+            <audio id="player" controls preload="none"></audio>
+            <div id="current-track" class="current-track">Select a track to play</div>
+          </div>
+
+          <ul id="playlist" class="playlist" aria-label="Title tracks playlist">
+            <li data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">Serial Intro 1 — Classic Theme</li>
+            <li data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3">Serial Intro 2 — Melodic Opening</li>
+            <li data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3">Serial Intro 3 — Nostalgic Tune</li>
+          </ul>
         </div>
 
-        <!-- The iframe will be injected here when clicked -->
-        <div id="video-target"></div>
       </div>
     </section>
 
